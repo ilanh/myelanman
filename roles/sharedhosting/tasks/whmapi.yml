@@ -1,0 +1,28 @@
+
+---
+# Validates that the path for whmapi output logs - (insert variable) exists
+# Creates a file with the intended whmapi calls for role sharedhosting 
+# If the 'liverun' was supplied executes the calls in the created file and deletes it
+- name: Include whmapi variables
+  include_vars: whmapisharedhostingvars.yml
+  tags:
+    - always
+
+- name: Make sure manage folder exists
+  file: 
+    path: "{{ whmapilogs }}"
+    state: directory
+  tags: whmapisharedhosting,whmapi
+
+- name: Create WHM api calls for sharedhosting role
+  template: 
+    src: whmapicalls.txt.j2
+    dest: "{{ whmapilogs }}/whmapisharedhostingcalls.txt"
+  tags: whmapisharedhosting,whmapi
+
+- name: Run the script
+  script: "runwhmapi1.sh whmapisharedhostingcalls.txt {{ whmapilogs }}"
+  args:
+    removes: "{{ whmapilogs }}/whmapisharedhostingcalls.txt"
+  tags: whmapisharedhosting,whmapi
+  when: liverun

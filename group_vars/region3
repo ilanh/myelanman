@@ -1,0 +1,25 @@
+---
+## main variables for region3
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+region3firewallports:
+
+# section Firewall white list for IP
+region3firewallwhiteip:
+
+# section process list to ignore
+region3csfignorelist:
+
+# section Active EasyApache profile
+region3ea:
+
+# section SNMP Configuration
+region3serversnmp:
+# server timezone 
+  timezone: 'GMT'  
+
+# section pure-ftp local config
+region3pureftpdlocal:
+

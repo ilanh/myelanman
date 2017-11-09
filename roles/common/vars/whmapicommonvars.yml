@@ -1,0 +1,23 @@
+---
+## whmapi variables for common
+#
+# All values that are supposed to be at this level 
+whmapicommonvars:
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=cpanelid' }
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=facebook' }
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=paypal' }
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=google' }
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=amazon' }
+  - { section: 'disable_authentication_provider', object: 'service_name=cpaneld ', value: 'provider_id=whmcs' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=cpanelid' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=facebook' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=paypal' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=google' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=amazon' }
+  - { section: 'disable_authentication_provider', object: 'service_name=whostmgrd ', value: 'provider_id=whmcs' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=cpanelid' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=facebook' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=paypal' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=google' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=amazon' }
+  - { section: 'disable_authentication_provider', object: 'service_name=webmaild ', value: 'provider_id=whmcs' }

@@ -1,0 +1,25 @@
+---
+## main variables for region4
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+region4firewallports:
+
+# section Firewall white list for IP
+region4firewallwhiteip:
+
+# section process list to ignore
+region4csfignorelist:
+
+# section Active EasyApache profile
+region4ea:
+
+# section SNMP Configuration
+region4serversnmp:
+# server timezone 
+  timezone: 'GMT'  
+
+# section pure-ftp local config
+region4pureftpdlocal:
+

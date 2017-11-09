@@ -1,0 +1,31 @@
+---
+## main variables for brand1
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+brand1firewallports:
+
+# section Firewall white list for IP
+brand1firewallwhiteip:
+
+# section process list to ignore
+brand1csfignorelist:
+
+# section Active EasyApache profile
+brand1ea:
+
+# section SNMP Configuration
+brand1serversnmp:
+# server contact 
+  server-contact-email: 'servers@brand1.com'  
+# snmp monitor host 
+  monitor-host: 'monitor.brand.com'  
+# snmp community 
+  monitor-community: 'public'  
+# snmp read only user 
+  read-only-user: 'rouser'  
+
+# section pure-ftp local config
+brand1pureftpdlocal:
+

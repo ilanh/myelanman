@@ -1,0 +1,8 @@
+---
+# file: dnsonly.yml
+# playbook for dnsonly tier
+- hosts: dnsonly
+  roles:
+    - common
+    - dnsonly
+    - postrun

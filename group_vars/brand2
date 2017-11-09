@@ -1,0 +1,23 @@
+---
+## main variables for brand2
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+brand2firewallports:
+
+# section Firewall white list for IP
+brand2firewallwhiteip:
+
+# section process list to ignore
+brand2csfignorelist:
+
+# section Active EasyApache profile
+brand2ea:
+
+# section SNMP Configuration
+brand2serversnmp:
+
+# section pure-ftp local config
+brand2pureftpdlocal:
+

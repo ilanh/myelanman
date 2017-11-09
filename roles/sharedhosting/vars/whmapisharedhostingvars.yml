@@ -1,0 +1,17 @@
+---
+## whmapi variables for sharedhosting
+#
+# All values that are supposed to be at this level 
+whmapisharedhostingvars:
+  - { section: 'backup_config_set', object: 'backupenable=', value: '1' }
+  - { section: 'backup_config_set', object: 'backup_daily_enable=', value: '1' }
+  - { section: 'backup_config_set', object: 'backup_retention=', value: '5' }
+  - { section: 'backup_config_set', object: 'backupdays=', value: '1,3,5' }
+  - { section: 'backup_config_set', object: 'backup_weekly_enable=', value: '1' }
+  - { section: 'backup_config_set', object: 'backup_weekly_retention=', value: '2' }
+  - { section: 'backup_config_set', object: 'backup_weekly_day=', value: '5' }
+  - { section: 'backup_config_set', object: 'backup_monthly_enable=', value: '1' }
+  - { section: 'backup_config_set', object: 'backup_monthly_retention=', value: '2' }
+  - { section: 'backup_config_set', object: 'backupdir=', value: '/mnt/backup' }
+  - { section: 'backup_config_set', object: 'backuptype=', value: 'compressed' }
+  - { section: 'backup_config_set', object: 'keeplocale=', value: '1' }

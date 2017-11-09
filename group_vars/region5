@@ -1,0 +1,25 @@
+---
+## main variables for region5
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+region5firewallports:
+
+# section Firewall white list for IP
+region5firewallwhiteip:
+
+# section process list to ignore
+region5csfignorelist:
+
+# section Active EasyApache profile
+region5ea:
+
+# section SNMP Configuration
+region5serversnmp:
+# server timezone 
+  timezone: 'UTC'  
+
+# section pure-ftp local config
+region5pureftpdlocal:
+

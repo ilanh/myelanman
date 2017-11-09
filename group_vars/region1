@@ -1,0 +1,33 @@
+---
+## main variables for region1
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+region1firewallports:
+
+# section Firewall white list for IP
+region1firewallwhiteip:
+
+# section process list to ignore
+region1csfignorelist:
+
+# section Active EasyApache profile
+region1ea:
+
+# section SNMP Configuration
+region1serversnmp:
+# server contact 
+  server-contact-email: 'servers@brand1.com'  
+# snmp monitor host 
+  monitor-host: 'monitor.brand.com'  
+# server timezone 
+  timezone: 'Asia/Jerusalem'  
+# snmp community 
+  monitor-community: 'public'  
+# snmp read only user 
+  read-only-user: 'rouser'  
+
+# section pure-ftp local config
+region1pureftpdlocal:
+

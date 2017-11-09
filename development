@@ -1,0 +1,181 @@
+# inventory file for development
+
+# regions and roles
+
+# All servers with role sharedhosting at region1
+[region1-sharedhosting]
+
+# All servers with role dnsonly at region1
+[region1-dnsonly]
+
+# All servers with role mailonly at region1
+[region1-mailonly]
+
+# All servers with role ftponly at region1
+[region1-ftponly]
+
+# All servers with role sharedhosting at region2
+[region2-sharedhosting]
+
+# All servers with role dnsonly at region2
+[region2-dnsonly]
+
+# All servers with role mailonly at region2
+[region2-mailonly]
+
+# All servers with role ftponly at region2
+[region2-ftponly]
+
+# All servers with role sharedhosting at region3
+[region3-sharedhosting]
+
+# All servers with role dnsonly at region3
+[region3-dnsonly]
+
+# All servers with role mailonly at region3
+[region3-mailonly]
+
+# All servers with role ftponly at region3
+[region3-ftponly]
+
+# All servers with role sharedhosting at region4
+[region4-sharedhosting]
+
+# All servers with role dnsonly at region4
+[region4-dnsonly]
+
+# All servers with role mailonly at region4
+[region4-mailonly]
+
+# All servers with role ftponly at region4
+[region4-ftponly]
+
+# All servers with role sharedhosting at region5
+[region5-sharedhosting]
+
+# All servers with role dnsonly at region5
+[region5-dnsonly]
+
+# All servers with role mailonly at region5
+[region5-mailonly]
+
+# All servers with role ftponly at region5
+[region5-ftponly]
+ftp06.brand1.com
+
+# brands and roles
+
+[brand1-sharedhosting]
+
+[brand1-dnsonly]
+
+[brand1-mailonly]
+
+[brand1-ftponly]
+ftp06.brand1.com
+
+[brand2-sharedhosting]
+
+[brand2-dnsonly]
+
+[brand2-mailonly]
+
+[brand2-ftponly]
+
+# roles children
+
+# define children of sharedhosting
+[sharedhosting:children]
+region1-sharedhosting
+region2-sharedhosting
+region3-sharedhosting
+region4-sharedhosting
+region5-sharedhosting
+
+# define children of dnsonly
+[dnsonly:children]
+region1-dnsonly
+region2-dnsonly
+region3-dnsonly
+region4-dnsonly
+region5-dnsonly
+
+# define children of mailonly
+[mailonly:children]
+region1-mailonly
+region2-mailonly
+region3-mailonly
+region4-mailonly
+region5-mailonly
+
+# define children of ftponly
+[ftponly:children]
+region1-ftponly
+region2-ftponly
+region3-ftponly
+region4-ftponly
+region5-ftponly
+
+# region children
+
+# define children of region1
+[region1:children]
+region1-sharedhosting
+region1-dnsonly
+region1-mailonly
+region1-ftponly
+
+# define children of region2
+[region2:children]
+region2-sharedhosting
+region2-dnsonly
+region2-mailonly
+region2-ftponly
+
+# define children of region3
+[region3:children]
+region3-sharedhosting
+region3-dnsonly
+region3-mailonly
+region3-ftponly
+
+# define children of region4
+[region4:children]
+region4-sharedhosting
+region4-dnsonly
+region4-mailonly
+region4-ftponly
+
+# define children of region5
+[region5:children]
+region5-sharedhosting
+region5-dnsonly
+region5-mailonly
+region5-ftponly
+
+# brand children
+
+# define children of brand1
+[brand1:children]
+brand1-sharedhosting
+brand1-dnsonly
+brand1-mailonly
+brand1-ftponly
+
+# define children of brand2
+[brand2:children]
+brand2-sharedhosting
+brand2-dnsonly
+brand2-mailonly
+brand2-ftponly
+
+
+[all:vars]
+whm_installed=true
+whmapilogs="/var/log/whmapi"
+develop=false
+clCagefsEnabled=true
+c1CagefsRelocate=true
+clAltphpEnabled=true
+clLsapiEnabled=true
+csfTestMode='0'

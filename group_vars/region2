@@ -1,0 +1,25 @@
+---
+## main variables for region2
+#
+# All values that are supposed to be at this level 
+
+# section Firewall ports actions
+region2firewallports:
+
+# section Firewall white list for IP
+region2firewallwhiteip:
+
+# section process list to ignore
+region2csfignorelist:
+
+# section Active EasyApache profile
+region2ea:
+
+# section SNMP Configuration
+region2serversnmp:
+# server timezone 
+  timezone: 'UTC'  
+
+# section pure-ftp local config
+region2pureftpdlocal:
+

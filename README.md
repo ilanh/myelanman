@@ -1,5 +1,8 @@
 # eLANman on localhost
-
+This playbook was created automatically using this playbook:
+https://github.com/ilanh/elanman
+And this answer file:
+https://raw.githubusercontent.com/ilanh/myelanman/master/answers.yml
 
 ### What is this
 This project aim is to help admins configure WHM/cPanel servers using Ansible.
@@ -14,10 +17,10 @@ Install ConfigServer Mail Queue Manage plugin
 Install ConfigServer Mail Manage plugin  
 Install ConfigServer ModSecurity Manage plugin  
 Configure CloudLinux CageFS,Alt-php,LSAPI  
+And a lit bit more.
 
 #### Based on
 The directory structure is based on [Playboooks Best Practices](http://docs.ansible.com/ansible/playbooks_best_practices.html) and defines 6 roles, 3 inventory files and 5 regions.
-
 
 ### Why
 The main reason for this project was to enable me to create a baseline for new servers and slowly reconfigure old servers according to baseline.
@@ -30,45 +33,6 @@ The structure takes into account 6 roles:
   mailonly - Mail only whm servers   
   ftponly - FTP only whm servers   
   postrun - postrun role, included in all roles last (This role is an addon to all roles)  
-
-#### Files layout
-.   
-* files
-* group_vars
-* host_vars
-* roles
-    * common
-        * defaults
-        * files
-        * handlers
-        * meta
-        * tasks
-        * templates
-        * vars
-    * dnsonly
-        * defaults
-        * files
-        * handlers
-        * meta
-        * tasks
-        * templates
-        * vars
-    * mailonly
-        * defaults
-        * files
-        * handlers
-        * meta
-        * tasks
-        * templates
-        * vars
-    * sharedhosting
-        * defaults
-        * files
-        * handlers
-        * meta
-        * tasks
-        * templates
-        * vars
 
 
 ## Install
@@ -100,3 +64,8 @@ ssh-keygen -t rsa
 how to copy keys to hosts  
 ssh-copy-id ip/hostname 
 
+If you will run the command: 
+`asible-playbook -i production site.yml --list-tasks --list-tags --list-hosts -e "liverun=true"`
+You will receive this output:
+https://raw.githubusercontent.com/ilanh/myelanman/master/playbookoutput.log
+(Whenever you add one of the --list-xxx options, no task is performed, ansible just outputs your requested list)

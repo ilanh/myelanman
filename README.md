@@ -1,4 +1,4 @@
-# eLANman on localhost
+# eLanman on localhost
 This playbook was created automatically using this playbook:  
 https://github.com/ilanh/elanman  
 And this answer file:  

@@ -1,0 +1,25 @@
+---
+## main variables for ftponly
+##
+## All values that are supposed to be at this level 
+
+liverun: false
+
+
+# section Firewall ports actions
+ftponlyfirewallports:
+
+# section Firewall white list for IP
+ftponlyfirewallwhiteip:
+
+# section process list to ignore
+ftponlycsfignorelist:
+
+# section Active EasyApache profile
+ftponlyea:
+
+# section SNMP Configuration
+ftponlyserversnmp:
+
+# section pure-ftp local config
+ftponlypureftpdlocal:

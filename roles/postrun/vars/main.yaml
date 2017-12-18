@@ -1,0 +1,25 @@
+---
+## main variables for postrun
+##
+## All values that are supposed to be at this level 
+
+liverun: false
+
+
+# section Firewall ports actions
+postrunfirewallports:
+
+# section Firewall white list for IP
+postrunfirewallwhiteip:
+
+# section process list to ignore
+postruncsfignorelist:
+
+# section Active EasyApache profile
+postrunea:
+
+# section SNMP Configuration
+postrunserversnmp:
+
+# section pure-ftp local config
+postrunpureftpdlocal:

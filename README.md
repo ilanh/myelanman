@@ -1,8 +1,8 @@
-# eLANman on localhost
+# eLANman on git.box.co.il
 This playbook was created automatically using this playbook:  
 https://github.com/ilanh/elanman  
 And this answer file:  
-https://raw.githubusercontent.com/ilanh/myelanman/master/answers.yml  
+https://raw.githubusercontent.com/ilanh/myelanman/master/answers.yaml  
 
 ### What is this
 This project aim is to help admins configure WHM/cPanel servers using Ansible.
@@ -79,7 +79,7 @@ The structure takes into account 6 roles:
 
 ### Ansible
 How ansible works:  
-You write your stuff in almost plain language compatible with ansible (yml) and ansible fire commands using ssh, no agent is required.  
+You write your stuff in almost plain language compatible with ansible (yaml) and ansible fire commands using ssh, no agent is required.  
 It might be slow for large quantities and for the purpose of this project it's not a problem.  
 
 #### Manage machine
@@ -98,7 +98,7 @@ http://docs.ansible.com/ansible/latest/intro_installation.html
 
 
 If you will run the command:  
-`asible-playbook -i production site.yml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
+`asible-playbook -i production site.yaml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
 You will receive this output:  
 https://raw.githubusercontent.com/ilanh/myelanman/master/playbookoutput.log  
 FYI, whenever you add one of the --list-xxx option to ansible, no task is performed, ansible just outputs your requested list.  

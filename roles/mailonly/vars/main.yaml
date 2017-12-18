@@ -1,0 +1,25 @@
+---
+## main variables for mailonly
+##
+## All values that are supposed to be at this level 
+
+liverun: false
+
+
+# section Firewall ports actions
+mailonlyfirewallports:
+
+# section Firewall white list for IP
+mailonlyfirewallwhiteip:
+
+# section process list to ignore
+mailonlycsfignorelist:
+
+# section Active EasyApache profile
+mailonlyea:
+
+# section SNMP Configuration
+mailonlyserversnmp:
+
+# section pure-ftp local config
+mailonlypureftpdlocal:

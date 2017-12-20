@@ -1,4 +1,4 @@
-# eLANman on git.box.co.il
+# eLanman on git.box.co.il
 This playbook was created automatically using this playbook:  
 https://github.com/ilanh/elanman  
 And this answer file:  
@@ -98,7 +98,7 @@ http://docs.ansible.com/ansible/latest/intro_installation.html
 
 
 If you will run the command:  
-`asible-playbook -i production site.yaml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
+`ansible-playbook -i production site.yaml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
 You will receive this output:  
 https://raw.githubusercontent.com/ilanh/myelanman/master/playbookoutput.log  
 FYI, whenever you add one of the --list-xxx option to ansible, no task is performed, ansible just outputs your requested list.  

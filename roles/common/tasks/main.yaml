@@ -1,0 +1,18 @@
+---
+# Tasks for common
+
+# Import tasks for general server checks
+- name: "Import checks tasks"
+  import_tasks: "checks.yaml"
+
+# Import tasks for ConfigServer Firewall addon
+- name: "Import csfinstall tasks"
+  import_tasks: "csfinstall.yaml"
+
+# Import tasks for Configure task for csf
+- name: "Import csfconf tasks"
+  import_tasks: "csfconf.yaml"
+
+# Import tasks for whmapi task for common
+- name: "Import whmapi tasks"
+  import_tasks: "whmapi.yaml"

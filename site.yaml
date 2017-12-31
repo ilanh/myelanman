@@ -1,0 +1,6 @@
+---
+# master playbook
+- import_playbook: sharedhosting.yaml
+- import_playbook: dnsonly.yaml
+- import_playbook: mailonly.yaml
+- import_playbook: ftponly.yaml

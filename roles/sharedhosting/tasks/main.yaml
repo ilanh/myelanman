@@ -1,0 +1,30 @@
+---
+# Tasks for sharedhosting
+
+# Import tasks for Cloudlinux tasks
+- name: "Import cloudlinux tasks"
+  import_tasks: "cloudlinux.yaml"
+
+# Import tasks for ConfigServer Mod Security plugin
+- name: "Import cmcinstall tasks"
+  import_tasks: "cmcinstall.yaml"
+
+# Import tasks for ConfigServer Mail manage plugin
+- name: "Import cmminstall tasks"
+  import_tasks: "cmminstall.yaml"
+
+# Import tasks for ConfigServer Mail Queue plugin
+- name: "Import cmqinstall tasks"
+  import_tasks: "cmqinstall.yaml"
+
+# Import tasks for Configure task for csf
+- name: "Import csfconf tasks"
+  import_tasks: "csfconf.yaml"
+
+# Import tasks for ConfigServer Exploit addon (requires license)
+- name: "Import cxsinstall tasks"
+  import_tasks: "cxsinstall.yaml"
+
+# Import tasks for whmapi task for sharedhosting
+- name: "Import whmapi tasks"
+  import_tasks: "whmapi.yaml"

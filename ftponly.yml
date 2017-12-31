@@ -1,8 +1,0 @@
----
-# file: ftponly.yml
-# playbook for ftponly tier
-- hosts: ftponly
-  roles:
-    - common
-    - ftponly
-    - postrun

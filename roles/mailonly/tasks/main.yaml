@@ -1,0 +1,6 @@
+---
+# Tasks for mailonly
+
+# Import tasks for whmapi task for postrun
+- name: "Import whmapi tasks"
+  import_tasks: "whmapi.yaml"

@@ -2,10 +2,23 @@
 This playbook was created automatically using this playbook:  
 https://github.com/ilanh/elanman  
 And this answer file:  
-https://raw.githubusercontent.com/ilanh/myelanman/master/answers.yml  
+https://raw.githubusercontent.com/ilanh/myelanman/master/answers.yaml  
+It is a full working example of tasks, roles and variables for a multi regional solution.
 
-### What is this
+
+### What is this repo
 This project aim is to help admins configure WHM/cPanel servers using Ansible.
+You can just clone this project and change it to fit your needs,
+or you can:
+ edit the answer.yaml in this directory
+ move to another directory
+ run:
+  ansible-galaxy install ilanh.elanman
+  cd ilanh.elanman
+  ansible-playbook -i managers.sample elanman.yaml -e "destinationDir=this_is_where_you_choose_the_directory_with_the_answer_file"
+after that, return to original directory and investigate the structure and the content.
+
+
 
 #### What does it do
 Currently you can do the following tasks with this project:  
@@ -79,7 +92,7 @@ The structure takes into account 6 roles:
 
 ### Ansible
 How ansible works:  
-You write your stuff in almost plain language compatible with ansible (yml) and ansible fire commands using ssh, no agent is required.  
+You write your stuff in almost plain language compatible with ansible (yaml) and ansible fire commands using ssh, no agent is required.  
 It might be slow for large quantities and for the purpose of this project it's not a problem.  
 
 #### Manage machine
@@ -98,7 +111,7 @@ http://docs.ansible.com/ansible/latest/intro_installation.html
 
 
 If you will run the command:  
-`ansible-playbook -i production site.yml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
+`ansible-playbook -i production site.yaml --list-tasks --list-tags --list-hosts -e "liverun=true"`  
 You will receive this output:  
 https://raw.githubusercontent.com/ilanh/myelanman/master/playbookoutput.log  
 FYI, whenever you add one of the --list-xxx option to ansible, no task is performed, ansible just outputs your requested list.  

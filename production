@@ -9,57 +9,75 @@ sh01.brand2.com
 
 # All servers with role dnsonly at region1
 [region1-dnsonly]
+ns01.brand1.com
+ns01.brand2.com
 
 # All servers with role mailonly at region1
 [region1-mailonly]
+ms01.brand1.com
 ms01.brand2.com
 
 # All servers with role ftponly at region1
 [region1-ftponly]
+ftp01.brand1.com
+ftp01.brand2.com
 
 # All servers with role sharedhosting at region2
 [region2-sharedhosting]
-sh02.brand1.com
-sh02.brand2.com
+sh03.brand1.com
+sh03.brand2.com
 
 # All servers with role dnsonly at region2
 [region2-dnsonly]
+ns02.brand1.com
+ns02.brand2.com
 
 # All servers with role mailonly at region2
 [region2-mailonly]
 
 # All servers with role ftponly at region2
 [region2-ftponly]
+ftp02.brand1.com
+ftp02.brand2.com
 
 # All servers with role sharedhosting at region3
 [region3-sharedhosting]
-sh07.brand1.com
+sh05.brand1.com
+sh05.brand2.com
 
 # All servers with role dnsonly at region3
 [region3-dnsonly]
+ns03.brand1.com
+ns03.brand2.com
 
 # All servers with role mailonly at region3
 [region3-mailonly]
 
 # All servers with role ftponly at region3
 [region3-ftponly]
+ftp03.brand1.com
+ftp03.brand2.com
 
 # All servers with role sharedhosting at region4
 [region4-sharedhosting]
-sh05.brand1.com
+sh07.brand1.com
+sh07.brand2.com
 
 # All servers with role dnsonly at region4
 [region4-dnsonly]
-ns01.brand1.com
 
 # All servers with role mailonly at region4
 [region4-mailonly]
 
 # All servers with role ftponly at region4
 [region4-ftponly]
+ftp04.brand1.com
+ftp04.brand2.com
 
 # All servers with role sharedhosting at region5
 [region5-sharedhosting]
+sh08.brand1.com
+sh08.brand2.com
 
 # All servers with role dnsonly at region5
 [region5-dnsonly]
@@ -69,34 +87,54 @@ ns01.brand1.com
 
 # All servers with role ftponly at region5
 [region5-ftponly]
-ftp03.brand1.com
+ftp05.brand1.com
+ftp05.brand2.com
 
 # brands and roles
 
 [brand1-sharedhosting]
 sh01.brand1.com
-sh02.brand1.com
+sh03.brand1.com
 sh05.brand1.com
 sh07.brand1.com
+sh08.brand1.com
 
 [brand1-dnsonly]
 ns01.brand1.com
+ns02.brand1.com
+ns03.brand1.com
 
 [brand1-mailonly]
+ms01.brand1.com
 
 [brand1-ftponly]
+ftp01.brand1.com
+ftp02.brand1.com
 ftp03.brand1.com
+ftp04.brand1.com
+ftp05.brand1.com
 
 [brand2-sharedhosting]
 sh01.brand2.com
-sh02.brand2.com
+sh03.brand2.com
+sh05.brand2.com
+sh07.brand2.com
+sh08.brand2.com
 
 [brand2-dnsonly]
+ns01.brand2.com
+ns02.brand2.com
+ns03.brand2.com
 
 [brand2-mailonly]
 ms01.brand2.com
 
 [brand2-ftponly]
+ftp01.brand2.com
+ftp02.brand2.com
+ftp03.brand2.com
+ftp04.brand2.com
+ftp05.brand2.com
 
 # roles children
 

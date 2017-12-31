@@ -4,6 +4,8 @@
 
 # All servers with role sharedhosting at region1
 [region1-sharedhosting]
+sh02.brand1.com
+sh02.brand2.com
 
 # All servers with role dnsonly at region1
 [region1-dnsonly]
@@ -61,20 +63,20 @@
 
 # All servers with role ftponly at region5
 [region5-ftponly]
-ftp06.brand1.com
 
 # brands and roles
 
 [brand1-sharedhosting]
+sh02.brand1.com
 
 [brand1-dnsonly]
 
 [brand1-mailonly]
 
 [brand1-ftponly]
-ftp06.brand1.com
 
 [brand2-sharedhosting]
+sh02.brand2.com
 
 [brand2-dnsonly]
 

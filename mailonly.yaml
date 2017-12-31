@@ -1,0 +1,8 @@
+---
+# file: mailonly.yaml
+# playbook for mailonly tier
+- hosts: mailonly
+  roles:
+    - common
+    - mailonly
+    - postrun

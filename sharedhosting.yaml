@@ -1,0 +1,8 @@
+---
+# file: sharedhosting.yaml
+# playbook for sharedhosting tier
+- hosts: sharedhosting
+  roles:
+    - common
+    - sharedhosting
+    - postrun

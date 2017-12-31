@@ -1,0 +1,28 @@
+
+---
+# Validates that the path for whmapi output logs - (insert variable) exists
+# Creates a file with the intended whmapi calls for role dnsonly 
+# If the 'liverun' was supplied executes the calls in the created file and deletes it
+- name: Include whmapi variables
+  include_vars: whmapidnsonlyvars.yaml
+  tags:
+    - always
+
+- name: Make sure manage folder exists
+  file: 
+    path: "{{ whmapilogs }}"
+    state: directory
+  tags: whmapidnsonly,whmapi
+
+- name: Create WHM api calls for dnsonly role
+  template: 
+    src: whmapicalls.txt.j2
+    dest: "{{ whmapilogs }}/whmapidnsonlycalls.txt"
+  tags: whmapidnsonly,whmapi
+
+- name: Run the script
+  script: "runwhmapi1.sh whmapidnsonlycalls.txt {{ whmapilogs }}"
+  args:
+    removes: "{{ whmapilogs }}/whmapidnsonlycalls.txt"
+  tags: whmapidnsonly,whmapi
+  when: liverun

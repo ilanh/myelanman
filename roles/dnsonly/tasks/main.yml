@@ -1,6 +1,0 @@
----
-# Tasks for dnsonly
-
-# Import tasks for whmapi task for dnsonly
-- name: "Import whmapi tasks"
-  import_tasks: "whmapi.yml"
